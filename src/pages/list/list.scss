@@ -1,0 +1,236 @@
+.zzsb-list {
+    padding: 10px 40px;
+    // 条件
+    .search {
+        background: $top-bg;
+        color: #fff;
+        padding: 12px 0 0 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 12;
+        top: 120px;
+        transform: all .25s ease-in-out;
+        left: 0;
+        &.minh412 {
+            height: 412px;
+            min-height: 412px;
+        }
+        .search-bttom {
+            padding: 20px 0 0 0;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transform: translateY(-100px);
+            transition: all .25s ease-in-out;
+            &.more-conditions {
+                height: 300px;
+                opacity: 1;
+                overflow: initial;
+                transform: translateY(0);
+                transition: all .25s ease-in-out;
+                padding: 0 0 20px 0;
+            }
+        }
+        
+        .search-top {
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                display: inline-block;
+                flex: 1;
+            }
+        }
+        .text-btn {
+            span {
+                display: inline-block;
+                margin: 0 20px;
+                font-size: 30px;
+                width: 100px;
+                text-align: center;
+                padding: 0 0 11px 0;
+            }
+            span.icon-tubiao- {
+                font-size: 70px;
+            }
+            span.active {
+                border-bottom: 4px solid #fff;
+                border-radius: 3px;
+            }
+        }
+        .text-btn.text-r {
+            padding: 0 20px 0 0;
+        }
+        .conditions-wrap {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 30px 0 40px;
+            flex-wrap: wrap;
+            .th-form__item {
+                width: 50%;
+            }
+        }
+        .search-btn {
+            padding: 20px 0;
+            button {
+                margin: 0 20px;
+            }
+        }
+        label.el-form-item__label {
+            color: #fff!important;
+        }
+    }
+
+    // 列表
+    .am-list {
+        padding: 120px 0 0 0;
+    }
+    .am-list-body {
+        background-color: transparent;
+        padding: 10px 0;
+        &::before, &::after {
+            border: 0!important;
+            background-color: transparent!important;
+        }
+    }
+    .am-list-item {
+        padding-left: 0;
+        padding: 0 5px;
+        margin: 20px 0;
+        background: linear-gradient(to right, #4C5055, #37393E) !important;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 0 4px #25262A;
+        border: 1.3px solid transparent!important;
+        &.selected {
+            border-color: #a1ec1e!important;
+            transition: all .25s;
+            transform: scale(1.05);
+        }
+    }
+    .list-item {
+        color: #ffffff;
+        .item-header, .item-cont {
+            padding-left: 45px;
+        }
+        .item-header {
+            font-size: 25px;
+            font-weight: bold;
+            height: 80px;
+            line-height: 80px;
+            border-bottom: 1px solid #25262A;
+        }
+        .item-cont {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            .item-cont__details {
+                flex: 0 1 auto;
+                width: 33.33%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 22px;
+                &.w100 {
+                    width: 100%;
+                }
+                .item-label {
+                    display: inline-block;
+                    width: 110px;
+                }
+                
+            }
+        }
+        .money {
+            font-size: 22px;
+        }
+        i {
+            font-style: normal;
+            font-size: 40px;
+            color: #a1ec1e;
+            padding: 0 10px 0 0
+        }
+    }
+    .am-radio {
+        height: 100%!important;
+    }
+    .am-list .am-list-item.am-radio-item .am-list-line .am-list-extra .am-radio-inner {
+        left: 15px;
+        top: 32px;
+    }
+    .am-radio-inner::after {
+        width: 11px;
+        height: 18px;
+        border-width: 0 2.5px 2.5px 0;
+        border-color: #a1ec1e!important;
+    }
+    .no-data {
+        padding: 40px 0;
+        font-size: 25px;
+        color: #eee;
+        justify-content: center;
+        align-items: center;
+        &.flex-colum {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+            p {
+                color: #999;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    // modal层
+    .modal {
+        position: fixed;
+        width: 100vw;
+        height: 0;
+        top: 120px;
+        left: 0; 
+        transition: all .1s;
+        z-index: 11;
+        background: rgba(0, 0, 0, .4);
+        &.modal-active {
+            height: calc(100% - 120px)
+        }
+    }
+
+    // 按钮
+    button {
+        width: 200px;
+        border-radius: 40px;
+        background: transparent;
+        font-size: 30px;
+        padding: 20px 40px;
+        color: #a1ec1e;
+        border: 1px solid #a1ec1e;
+        outline: 0;
+        margin: 0 10px;
+    }
+    .foot-btn__wrap {
+        padding: 0 40px;
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        background: $bottom-color;
+        align-items: center;
+        padding: 0 20px;
+        justify-content: space-between;
+        .dec-btn {
+            @include declearBtn;
+            &.untouch-btn {
+                @include unToutchBtn;
+            }
+        }
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    html:not([data-scale]) .am-list-item:not(:last-child) .am-list-line::after {
+        background-color: transparent!important;
+    }
+}

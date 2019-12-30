@@ -1,0 +1,151 @@
+$bottom-color: #25262A; // 底部背景
+$primary-color: #25262A;
+$top-bg: #25262A;       // 列表顶部背景颜色
+// $money-color: #ffb300;  // 列表金额颜色
+// $status-color: #ffdd00; // 申报单列表状态颜色
+$money-color: #a1ec1e;  // 列表金额颜色
+$status-color: #ff3b3b; // 申报单列表状态颜色
+$subfont-color: #fff;   // 字体辅助色
+$section-head: #34353b; // 模块头部背景
+$boder-color: #25262A;  // 商品列表、模块头部边框颜色
+$label-color: #b2b2b2;  // 表单标签颜色
+$search-label: $label-color; // 搜索框下面的label颜色
+$home-arrow: #a1ec1e;   // 身份验证页面箭头颜色
+$auth-bg: #25262A;      // 身份验证页面背景色
+$homefont-color: #fff;  // 首页顶部文字
+$povermenu-bg: #37393e;
+$input-border: #b2b2b2; // 输入框下框线默认颜色
+$label-required: #FF5454; // 表单必填*
+
+
+// bacground 样式
+@mixin bgImg {
+    background-size: 100% 100%;
+    background-position: left top;
+}
+// 单选框选中
+@mixin selectRadio {
+    color: #a1ec1e;
+    background: #a1ec1e;
+    border-color: #a1ec1e;
+}
+
+// 镂空按钮
+@mixin hollowBtn {
+    color: #a1ec1e;
+    border: 1px solid #a1ec1e;
+}
+
+// 主要按钮
+@mixin primaryBtn {
+    color: #ffffff;
+    background: #a1ec1e;
+    border: 1px solid #a1ec1e;
+}
+
+// 申报按钮
+@mixin declearBtn {
+    @include primaryBtn
+}
+
+// 不可用按钮
+@mixin unToutchBtn {
+    color: #777!important;
+    background: #999!important;
+    border: 1px solid #e5e5e5!important;
+    pointer-events: none;
+}
+
+// 弹框取消按钮
+@mixin dialogCancelBtn {
+    @include hollowBtn;
+}
+
+// 弹框背景
+@mixin dialogBg {
+    background: linear-gradient(to right, #4C5055, #37393E)!important;
+}
+
+// 全局背景
+@mixin containerBg {
+    background: linear-gradient(to bottom, $primary-color, $bottom-color);
+}
+
+// 块级表头背景
+@mixin sectionHead {
+    @include dialogBg;
+    border-bottom: 1px solid #25262A;
+}
+
+// 顶部导航
+@mixin navBg {
+    background: url('../../assets/img/nav_dark.png') no-repeat;
+}
+
+// 滚动条 滑块
+@mixin scrollBar {
+    background-color: rgba(0, 0, 0, .3);
+}
+// 滚动条背景
+@mixin scrollBarBg {
+    @include containerBg()
+}
+
+// 首页刷卡图片
+@mixin icread {
+    background: url('../../assets/img/ic_read_dark.png') no-repeat;
+    @include bgImg;
+}
+@mixin idread {
+    background: url('../../assets/img/id_read_dark.png') no-repeat;
+    @include bgImg;
+}
+
+// 首页验证文字
+@mixin idreadFont {
+    width: 480px;
+    background: url('../../assets/img/id-read__font.png') no-repeat;
+    @include bgImg;
+    height: 67px;
+}
+@mixin icreadFont {
+    width: 450px;
+    background: url('../../assets/img/ic-read__font.png') no-repeat;
+    @include bgImg;
+    height: 67px;
+}
+
+// 弹框菜单
+@mixin povermenu {
+    color: #fff!important;
+    border-bottom: 1px solid #25262A;
+}
+
+// 屏保
+@mixin screenPro {
+    background: url('../../assets/img/screen_pro_dark.gif') no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+}
+
+// 车牌号键盘配色 数字键盘配色
+.first-word-wrap, .keyboard-wrap, .keybord {
+    border: 1px solid #ddd;
+    background-color: #46494E!important;
+    box-shadow: none!important;
+    span {
+        background-color: #999!important;
+        color: #eee!important;
+    }
+    div.bordernone, span.bordernone {
+        background-color: transparent!important;
+    }
+}
+
+// 数字键盘样式
+.keybord {
+    span {
+        background: #ccc!important;
+        color: #222!important;
+    }
+}

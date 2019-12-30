@@ -1,0 +1,126 @@
+.slider-item {
+    width: 100%;
+    height: 432px;
+    img {
+        width: 100%;
+    }
+}
+.scanner-index {
+    height: 100%;
+    background: $auth-bg;
+    .bg-head {
+        width: 100%;
+        height: 432px;
+        margin: 0 0 140px 0;
+    }
+    .read-button {
+        width: 100vw;
+        height: 516px;
+        overflow: hidden;
+        margin: 0 auto;
+        .animate-img {
+            margin: 0 auto;
+            opacity: 1;
+            &.id-img {
+                margin-right: 0;
+                animation: idanimate 1.5s ease-out;
+            }
+            &.ic-img {
+                margin-left: 0;
+                 animation: icanimate 1.5s ease-out;
+            }
+
+        }
+    }
+    .img-font {
+        margin-bottom: 30px;
+    }
+}
+.screen-prop {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: 2019;
+    transition: all 1s;
+    @include screenPro;
+    &.screen-prop__active {
+        left: 0;
+        opacity: 1;
+    }
+}
+@keyframes idanimate {
+    0% {margin-right: -450px; opacity: 0;}
+    50% {margin-right: 120px; opacity: 1;}
+    100% {margin-right: 0; opacity: 1;}
+}
+@keyframes icanimate {
+    0% {margin-left: -450px; opacity: 0;}
+    50% {margin-left: 120px; opacity: 1;}
+    100% {margin-left: 0; opacity: 1;}
+}
+.authway-wrap {
+    width: 200vw;
+    height: 516px;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+    justify-content: space-around;
+    &.ic_active {
+        transform: translateX(-100vw);
+        .read-id {
+            opacity: 0;
+        }
+        .read-ic {
+            opacity: 1!important;
+        }
+    }
+    .auth-way {
+        width: 667px;
+        height: 516px;
+        &.read-ic {
+            transition: all .25s ease-in-out;
+            @include icread;
+            opacity: 0;
+        }
+        &.read-id {
+            transition: all .25s ease-in-out;
+            @include idread;
+        }
+    }
+}
+.tips {
+    color: #29acF7;
+    font-size: 40px;
+    font-family: SiYuanYaHei;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 131px 0 0 0;
+}
+.home-bottom {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  font-size: 16px;
+  color: #999;
+}
+span.arrow-bt {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 35px solid;
+    border-color: $home-arrow transparent transparent transparent;
+}
+.font-img {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.font-id__img {
+    @include idreadFont;
+}
+.font-ic__img {
+    @include icreadFont;
+}

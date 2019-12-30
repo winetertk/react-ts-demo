@@ -1,0 +1,21 @@
+// 主题文件
+@import "./dark.scss";
+
+// 通用样式
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin gradient($fcolor, $secColor) {
+    background: linear-gradient(to bottom, $fcolor, $secColor);
+}

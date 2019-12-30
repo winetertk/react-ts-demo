@@ -1,0 +1,157 @@
+$bottom-color: #36BBF9;
+$primary-color: #046BDF;
+$top-bg: #0871E1;
+$money-color: red;
+$status-color: red;
+$subfont-color: #666;
+$section-head: #fff;
+$boder-color: #ddd;
+$label-color: #666;
+$search-label: #fff;
+$home-arrow: #409EFF;
+$auth-bg: #fff;
+$homefont-color: #046BDF;
+$povermenu-bg: #ffffff;
+$input-border: #ddd;
+$label-required: red;
+
+// bacground 样式
+@mixin bgImg {
+    background-size: 100% 100%;
+    background-position: left top;
+}
+
+// 单选框选中
+@mixin selectRadio {
+    color: #409EFF;
+    background: #409EFF;
+    border-color: #409EFF;
+}
+
+// 镂空按钮
+@mixin hollowBtn {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+// 主要按钮
+@mixin primaryBtn {
+    color: #ffffff;
+    background: #36BBF9;
+    border: 1px solid #36BBF9;
+}
+
+// 申报按钮
+@mixin declearBtn {
+    color: #ffffff;
+    background: #a1ec1e;
+    border: 1px solid #a1ec1e;
+}
+
+// 不可用按钮
+@mixin unToutchBtn {
+    color: #999999;
+    background: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    pointer-events: none;
+}
+
+// 弹框取消按钮
+@mixin dialogCancelBtn {
+    color: #36BBF9;
+    border: 1px solid #36BBF9;
+}
+
+// 弹框背景
+@mixin dialogBg {
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF);
+}
+
+// 全局背景
+@mixin containerBg {
+    background: linear-gradient(to bottom, $primary-color, $bottom-color);
+}
+
+// 块级表头背景
+@mixin sectionHead {
+    background: linear-gradient(to right, #eef7ff, #eef7ff)!important;
+}
+
+// 顶部导航
+@mixin navBg {
+    background: url('../../resource/img/nav.png') no-repeat;
+}
+
+// 滚动条 滑块
+@mixin scrollBar {
+    background-color: rgba(0, 0, 0, .3);
+}
+// 滚动条背景
+@mixin scrollBarBg {
+    background: transparent;
+}
+
+// 首页验证方式图片
+@mixin icread {
+    background: url('../../resource/img/ic_read.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+}
+
+@mixin idread {
+    background: url('../../resource/img/id_read.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+}
+
+// 首页验证文字
+@mixin idreadFont {
+    width: 480px;
+    background: url('../../resource/img/id-readlight__font.png') no-repeat;
+    @include bgImg;
+    height: 67px;
+}
+@mixin icreadFont {
+    width: 450px;
+    background: url('../../resource/img/ic-readlight__font.png') no-repeat;
+    @include bgImg;
+    height: 67px;
+}
+
+// 弹框菜单
+@mixin povermenu {
+    color: #666!important;
+    border-bottom: 1px solid #eee;
+}
+
+// 屏保
+@mixin screenPro {
+    background: url('../../resource/img/screen_pro.gif') no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+}
+.mu-dialog-body {
+    color: initial!important;
+}
+
+// 车牌号键盘配色
+/*.first-word-wrap, .keyboard-wrap {
+    border: 1px solid #ddd;
+    background-color: #46494E!important;
+    box-shadow: none!important;
+    span {
+        background-color: #999!important;
+        color: #eee!important;
+    }
+    div.bordernone, span.bordernone {
+        background-color: transparent!important;
+    }
+}*/
+
+// 数字键盘样式
+/*.keybord {
+    span {
+        background: #ccc!important;
+        color: #222!important;
+    }
+}*/

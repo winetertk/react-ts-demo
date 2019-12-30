@@ -1,0 +1,83 @@
+.zzsb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px!important;
+    line-height: 120px;
+    background: #25262A;
+    padding: 0 20px;
+    box-shadow: 0 0 5px #25262A;
+    border-bottom: 1px solid #666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('../../../assets/img/nav_dark.png') no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+    img {
+        height: 40px;
+    }
+    .circle-menu {
+        text-align: right;
+        display: inline-block;
+        i {
+          display: inline-block;
+          background: #fff;
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          margin: 4px;
+        }
+    }
+    .router-name {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 0 0 0 120px;
+    }
+}
+.menu-item {
+    height: 60px;
+    line-height: 60px;
+    background: #37393e;
+    padding: 0 0 0 20px;
+    color: #fff;
+    border-bottom: 1px solid #25262A;
+    letter-spacing: 2px;
+    i {
+        display: inline-block;
+        padding: 0 20px 0 0;
+        font-size: 25px;
+    }
+    &:active {
+        transition: all .25s;
+        background: #222;
+    }
+}
+.fortest {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    border: 0;
+    top: 100px!important;
+    .am-popover-inner-wrapper {
+        background-color: #37393e;
+    }
+    .am-popover-inner {
+        font-size: 24px;
+        background-color: transparent;
+    }
+    .am-popover-arrow {
+        width: 50px;
+        height: 23px;
+        background: #37393e;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+        border-radius: 3px;
+        z-index: 0;
+        right: 5px;
+    }
+}
+.zzsb-container.has-header {
+    transition: all .25s;
+    padding: 120px 0 0 0;
+}

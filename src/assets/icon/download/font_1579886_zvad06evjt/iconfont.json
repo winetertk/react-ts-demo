@@ -1,0 +1,79 @@
+{
+  "id": "1579886",
+  "name": "自助申报端",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1518319",
+      "name": "默认图片 #cccccc & 120px ",
+      "font_class": "morentupianccccccpx",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1611119",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2129569",
+      "name": "历史图库",
+      "font_class": "lishituku",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "2407260",
+      "name": "搜索",
+      "font_class": "tubiao-",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "2423300",
+      "name": "无数据",
+      "font_class": "wushuju",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "3996617",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "5886127",
+      "name": "返回首页",
+      "font_class": "fanhuishouye",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "7339803",
+      "name": "历史数据",
+      "font_class": "lishishuju",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "9656288",
+      "name": "历史记录",
+      "font_class": "lishijilu",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9713052",
+      "name": "返回首页",
+      "font_class": "fanhuishouye1",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    }
+  ]
+}
